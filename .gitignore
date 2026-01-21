@@ -1,0 +1,25 @@
+# Unity Source Project (Too large for GitHub)
+SDGP Teacher Role/
+
+# Node modules
+Frontend/node_modules/
+Frontend/dist/
+
+# Python
+Backend/__pycache__/
+Backend/*.pyc
+Backend/.env
+Backend/venv/
+Backend/.venv/
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS
+.DS_Store
+Thumbs.db
