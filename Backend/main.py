@@ -17,9 +17,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# IMPORTANT: In a real project, use environment variables.
-# For now, the environment will provide the key automatically.
-apiKey = "AIzaSyCF99FqKSVbHuLXUow3AlV9z42aW6Cv9pQ" 
+# IMPORTANT: Use environment variables for API keys
+apiKey = os.getenv("GEMINI_API_KEY")
+if not apiKey:
+    print("Warning: GEMINI_API_KEY not found in environment variables")
+
 genai.configure(api_key=apiKey)
 
 # Choose the model
